@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+.search-bar {
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+.search-bar img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+nav {
+    background-color: #0033cc;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.banner {
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.quote {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
