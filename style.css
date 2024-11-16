@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -7,11 +6,15 @@ header {
     text-align: center;
     padding: 20px;
     background-color: #fff;
+    font-size: 30px;
+    font-family: 'Encode Sans', sans-serif;
 }
 .search-bar {
     position: relative;
-    width: 300px;
+    width: 100%;
+    max-width: 500px;
     margin: 20px auto;
+    padding: 130px 0;
 }
 .search-bar input {
     width: 100%;
@@ -30,22 +33,90 @@ header {
 nav {
     background-color: #0033cc;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0px;
 }
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 65px;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 50px;
 }
 .banner {
-    background-image: url('your-image-url.jpg');
+    background-image: url('https://s3-alpha-sig.figma.com/img/87ac/c8ef/10144e81144591e08d40950bdf579807?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EglZfXDZJRpgGliNgI4YzwSYK5qaYnac7Mss5MS9PUGHSTkKIxags3lSHsSYB7eo3RX5N7czTNvixLurr9thTfdTjEdKAgJID8b2vSFSq65RpIqSxzWO3O-QVHTtk-xhoIVyvg9fOZMiq1FvDLnqt0MlQaO40AJR1-2qB22u4jQWufdDPaUIWJdvzl0SeK8LnH67LE4otOrY7xNRfHnr~k4l4zq~DpwNhQ950aUfV3gFPqbPnDNHxKX65~Xio9wJMHllQYgslNqmC9BqzgTQn0cF3HffB-rPTgmop3IjU7eTKJkMB1NMCagZvvFjxqi~~~RjGthasCeTRb4CrNFudg__');
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 550px;
 }
 .quote {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     font-style: italic;
+    font-size: 25px;
+}
+
+.topnav {
+    background-color: #0033cc;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.topnav a {
+    color: white;
+    margin: 0 65px;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px; /* Adjust as needed */
+    padding: 20px;
+}
+
+/* Circular Image */
+.about-image img {
+    border-radius: 50%; /* Makes the image circular */
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Keep it square for a perfect circle */
+    object-fit: cover; /* Ensures the image fits within the circle */
+}
+
+.about-text {
+    padding-left: 50px; 
+}
+
+.about-text h2 {
+    font-size: 3rem; 
+}
+
+.about-text p {
+    font-size: 1.2rem; 
+    max-width: 600px; 
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    
+   .about-content {
+       flex-direction: column; /* Stack image and text vertically on small screens */
+       text-align: center;
+   }
+
+   .about-text {
+       padding-left: 0;
+       margin-top: 20px;
+   }
+
+   .about-image img {
+       width: 300px;
+       height: 300px;
+   }
 }
