@@ -53,3 +53,70 @@ nav a {
     font-style: italic;
     font-size: 25px;
 }
+
+.topnav {
+    background-color: #0033cc;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.topnav a {
+    color: white;
+    margin: 0 65px;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px; /* Adjust as needed */
+    padding: 20px;
+}
+
+/* Circular Image */
+.about-image img {
+    border-radius: 50%; /* Makes the image circular */
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Keep it square for a perfect circle */
+    object-fit: cover; /* Ensures the image fits within the circle */
+}
+
+.about-text {
+    padding-left: 50px; 
+}
+
+.about-text h2 {
+    font-size: 3rem; 
+}
+
+.about-text p {
+    font-size: 1.2rem; 
+    max-width: 600px; 
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    
+   .about-content {
+       flex-direction: column; /* Stack image and text vertically on small screens */
+       text-align: center;
+   }
+
+   .about-text {
+       padding-left: 0;
+       margin-top: 20px;
+   }
+
+   .about-image img {
+       width: 300px;
+       height: 300px;
+   }
+}
